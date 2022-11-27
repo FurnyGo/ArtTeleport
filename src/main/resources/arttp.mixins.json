@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "furnygo.arttp.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [],
+  "client": [
+    "ReceiveMessageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
