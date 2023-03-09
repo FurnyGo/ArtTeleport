@@ -1,9 +1,16 @@
-# Fabric Example Mod
+# ArtTeleport
+v1.0 - 1.18.2  
+v2.0 - 1.19.3+  
 
-## Setup
+## Доп. моды
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+v2.0 - [oωo-lib](https://modrinth.com/mod/owo-lib), [ModMenu](https://modrinth.com/mod/modmenu)  
+v1.0 - [MaliLib](https://cursefire.com/minecraft/mc-mods/malilib), [ModMenu](https://modrinth.com/mod/modmenu)  
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Как это работает?
+Используется система EasyPlace в стандартной лайтматике, вам нужно просто зажать ПКМ и лететь по горизонтали вперёд (вправо, если по арту)  
+При достижении конца первой строки в арте вас телепортирует в начало второй строки и т.д.  
+В конфиге можно настроить разные значения, например количество строк (v2.0), на случай если вы можете использовать принтер и задеваете соседние 3 строки  
+Конфиг настраивается через меню ModMenu  
+Нужно постоянно держать ПКМ зажатой (например скотчем приклеить кнопку мыши), а постоянно лететь вперёд можно через Auto Walk  
+![image](https://user-images.githubusercontent.com/68079109/224092446-659836d1-a40e-481c-982f-c7bac9ff6a52.png)  
