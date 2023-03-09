@@ -1,0 +1,16 @@
+{
+  "text.config.arttp-config.title": "Настройки ArtTeleport 2",
+  "text.config.arttp-config.option.isActive": "Активация мода (нужно переподключиться к серверу)",
+  "text.config.arttp-config.option.useTp": "Использовать /tp вместо /tppos",
+  "text.config.arttp-config.option.cCrdX": "Координата X для телепорта обратно",
+  "text.config.arttp-config.option.cCrdY": "Координата Y для телепорта обратно",
+  "text.config.arttp-config.option.cLimX": "Координата X, на которой вас тепнет (Лимитер)",
+  "text.config.arttp-config.option.cYaw": "Горизонтальный угол поворота камеры при телепортации",
+  "text.config.arttp-config.option.cPitch": "Вертикальный угол поворота камеры при телепортации",
+  "text.config.arttp-config.option.cStep": "Кол-во строк, на которое вас тепнет дальше",
+  "text.config.arttp-config.option.checkTimer": "Скорость проверки координат (мс)",
+  "text.config.arttp-config.option.inaccuracy": "Доп. диапазон после лимитера (во время лагов)",
+
+  "modmenu.summaryTranslation.arttp": "Телепортация по арту построчно",
+  "modmenu.descriptionTranslation.arttp": "С помощью этого мода можно строить арты автоматически"
+}

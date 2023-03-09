@@ -1,4 +1,9 @@
-# ArtTeleport
-Мод для майнкрафта чтоб строить арты в афк  
-Для работы нужен malilib  
-![image](https://user-images.githubusercontent.com/68079109/204161532-b54e83b8-6128-4564-8b11-4a49a1866cdf.png)
+# Fabric Example Mod
+
+## Setup
+
+For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+
+## License
+
+This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "arttp",
+  "version": "${version}",
+
+  "name": "ArtTeleport 2",
+  "description": "New version of mod that allows you to build maparts automatically",
+  "authors": [
+    "FurnyGo"
+  ],
+  "contact": {
+    "sources": "https://github.com/FurnyGo/ArtTeleport"
+  },
+
+  "license": "MIT",
+  "icon": "assets/arttp/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "furnygo.arttp.ArtTpMain"
+    ]
+  },
+  "mixins": [
+    "arttp.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric-api": "*",
+    "minecraft": ">=1.19",
+    "owo": "*",
+    "java": ">=17"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
