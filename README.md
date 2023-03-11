@@ -1,6 +1,8 @@
 # ArtTeleport
 v1.0 - 1.18.2  
 v2.0 - 1.19.3+  
+  
+СКАЧАТЬ - [ТЫК](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.0/arttp-2.0.jar)
 
 ## Доп. моды
 
