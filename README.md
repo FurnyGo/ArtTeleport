@@ -1,6 +1,8 @@
 # ArtTeleport
+![Скачиваний](https://img.shields.io/github/downloads/FurnyGo/ArtTeleport/total?color=red&logo=github&style=for-the-badge)  
 v1.0 - 1.18.2  
 v2.0 - 1.19.3+  
+  
   
 СКАЧАТЬ - [ТЫК](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.0/arttp-2.0.jar)
 
