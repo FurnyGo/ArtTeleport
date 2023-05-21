@@ -7,7 +7,7 @@ v2.1 - 1.19.3+
 
 ## Доп. моды
 
-v2.0 - [oωo-lib](https://modrinth.com/mod/owo-lib), [ModMenu](https://modrinth.com/mod/modmenu)  
+v2.1 - [oωo-lib](https://modrinth.com/mod/owo-lib), [ModMenu](https://modrinth.com/mod/modmenu)  
 
 ## Как это работает?
 Используется система EasyPlace в стандартной лайтматике, вам нужно просто зажать ПКМ, смотреть на восток и лететь прямо.  
