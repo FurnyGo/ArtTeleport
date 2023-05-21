@@ -11,29 +11,27 @@ import static furnygo.arttp.ArtTpMain.CONFIG;
 
 @Mixin(LoginHelloC2SPacket.class)
 public class CheckerStartMixin {
-	@Inject(at = @At("HEAD"), method = "write")
-	private void init(CallbackInfo info) {
-		(new Thread(() -> {
-			try {
-				Thread.sleep(10000);
-				while (true) {
-					if (CONFIG.isActive()) {
-						assert MinecraftClient.getInstance().player != null;
-						int crdX = (int) MinecraftClient.getInstance().player.getX();
-						if (crdX >= CONFIG.cLimX() && crdX <= CONFIG.cLimX()+CONFIG.inaccuracy()) {
-							if (CONFIG.useTp()) {
-								String nick = MinecraftClient.getInstance().player.getEntityName();
-								MinecraftClient.getInstance().player.networkHandler.sendChatCommand("tp " + nick + " " + CONFIG.cCrdX() + " " + CONFIG.cCrdY() + " ~" + CONFIG.cStep() + " " + CONFIG.cYaw() + " " + CONFIG.cPitch());
-							} else
-								MinecraftClient.getInstance().player.networkHandler.sendChatCommand("tppos " + CONFIG.cCrdX() + " " + CONFIG.cCrdY() + " ~" + CONFIG.cStep() + " " + CONFIG.cYaw() + " " + CONFIG.cPitch());
-						}
-						Thread.sleep(CONFIG.checkTimer());
-					}
-				}
-			} catch (Exception ex) {
-				ex.printStackTrace();
-			}
+    @Inject(at = @At("HEAD"), method = "write")
+    private void init(CallbackInfo info) {
+        (new Thread(() -> {
+            try {
+                Thread.sleep(10000);
+                while (CONFIG.isActive()) {
+                    assert MinecraftClient.getInstance().player != null;
+                    int crdX = (int) MinecraftClient.getInstance().player.getX();
+                    if (crdX >= CONFIG.cLimX() && crdX <= CONFIG.cLimX() + CONFIG.inaccuracy()) {
+                        if (CONFIG.useTp()) {
+                            String nick = MinecraftClient.getInstance().player.getEntityName();
+                            MinecraftClient.getInstance().player.networkHandler.sendChatCommand("tp " + nick + " " + CONFIG.cCrdX() + " " + CONFIG.cCrdY() + " ~" + CONFIG.cStep() + " " + CONFIG.cYaw() + " " + CONFIG.cPitch());
+                        } else
+                            MinecraftClient.getInstance().player.networkHandler.sendChatCommand("tppos " + CONFIG.cCrdX() + " " + CONFIG.cCrdY() + " ~" + CONFIG.cStep() + " " + CONFIG.cYaw() + " " + CONFIG.cPitch());
+                    }
+                    Thread.sleep(CONFIG.checkTimer());
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
 
-		})).start();
-	}
+        })).start();
+    }
 }
