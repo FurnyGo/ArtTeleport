@@ -1,14 +1,13 @@
 # ArtTeleport
 ![Скачиваний](https://img.shields.io/github/downloads/FurnyGo/ArtTeleport/total?color=red&logo=github&style=for-the-badge)  
-v2.0 - 1.19.3+  
+v2.1 - 1.19.3+  
   
   
-СКАЧАТЬ - [ТЫК](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.0/arttp-2.0.jar)
+СКАЧАТЬ - [ТЫК](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.1/arttp-2.1.jar)
 
 ## Доп. моды
 
 v2.0 - [oωo-lib](https://modrinth.com/mod/owo-lib), [ModMenu](https://modrinth.com/mod/modmenu)  
-v1.0 - [MaliLib](https://cursefire.com/minecraft/mc-mods/malilib), [ModMenu](https://modrinth.com/mod/modmenu)  
 
 ## Как это работает?
 Используется система EasyPlace в стандартной лайтматике, вам нужно просто зажать ПКМ, смотреть на восток и лететь прямо.  
