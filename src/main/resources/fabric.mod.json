@@ -30,7 +30,9 @@
     "fabric-api": "*",
     "minecraft": ">=1.19",
     "owo": "*",
-    "java": ">=17"
+    "java": ">=17",
+    "malilib": "*",
+    "litematica": "*"
   },
   "suggests": {
     "modmenu": "*"
