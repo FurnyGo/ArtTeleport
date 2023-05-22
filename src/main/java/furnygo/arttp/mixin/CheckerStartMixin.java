@@ -31,10 +31,12 @@ public class CheckerStartMixin {
                     }
                     else {
                         if (crdX >= CONFIG.cLimX() && crdX <= CONFIG.cLimX() + CONFIG.inaccuracy()) {
-                            MinecraftClient.getInstance().player.updatePositionAndAngles(MinecraftClient.getInstance().player.getX(), MinecraftClient.getInstance().player.getY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep(), CONFIG.cYaw(), CONFIG.cPitch());
+                            // End of line
+                            MinecraftClient.getInstance().player.updatePositionAndAngles(CONFIG.cLimX()-1, MinecraftClient.getInstance().player.getY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep(), CONFIG.cYaw(), CONFIG.cPitch());
                         }
                         else if (crdX <= CONFIG.cCrdX() && crdX >= CONFIG.cCrdX() - CONFIG.inaccuracy()) {
-                            MinecraftClient.getInstance().player.updatePositionAndAngles(MinecraftClient.getInstance().player.getX(), MinecraftClient.getInstance().player.getY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep(), CONFIG.cYaw()+180, CONFIG.cPitch());
+                            // Start of line
+                            MinecraftClient.getInstance().player.updatePositionAndAngles(CONFIG.cCrdX()+1, MinecraftClient.getInstance().player.getY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep(), CONFIG.cYaw()+180, CONFIG.cPitch());
                         }
                         Thread.sleep(CONFIG.checkTimer());
                     }
