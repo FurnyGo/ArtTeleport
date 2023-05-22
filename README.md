@@ -3,10 +3,10 @@
 v2.2 - 1.19.3+  
   
   
-СКАЧАТЬ - [ТЫК](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.2/arttp-2.2.jar)
+СКАЧАТЬ - [ТЫК](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.2/arttp-2.2.1.jar)
 
 ## Установка
-1. Качаете мод [тут](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.2/arttp-2.2.jar), скачиваете [oωo-lib](https://modrinth.com/mod/owo-lib), [Fabric API](https://modrinth.com/mod/fabric-api) и [ModMenu](https://modrinth.com/mod/modmenu)  
+1. Качаете мод [тут](https://github.com/FurnyGo/ArtTeleport/releases/download/v2.2/arttp-2.2.1.jar), скачиваете [oωo-lib](https://modrinth.com/mod/owo-lib), [Fabric API](https://modrinth.com/mod/fabric-api) и [ModMenu](https://modrinth.com/mod/modmenu)  
 2. Выбираете в своём лаунчере версию Fabric 1.19.4 (либо Fabric 1.19.3)  
 3. В папке майнкрафта (`WIN+R -> %appdata%`) кидаете эти моды в папку `mods` (Создайте папку, если её нет)  
 4. Запускаете майн, смотрите гайд снизу и настраиваете нужные координаты в конфиге мода через ModMenu  
