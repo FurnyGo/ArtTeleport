@@ -35,5 +35,10 @@ v2.2 - 1.19.3+
 
 Постоянно лететь можно через любой мод с Auto Walk  
   
-### Принцип работы наглядно:
+### Принцип работы наглядно
+
+Телепорты с серверной стороны (/tp и /tppos):  
 ![image](https://user-images.githubusercontent.com/68079109/224092446-659836d1-a40e-481c-982f-c7bac9ff6a52.png)  
+  
+Телепорты с клиента:  
+![image](https://github.com/FurnyGo/ArtTeleport/assets/68079109/3cc1949c-aa16-4be9-a0d8-f7f9c7809e3e)  
