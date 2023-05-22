@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "arttp",
-  "version": "${version}",
+  "version": "2.0",
 
   "name": "ArtTeleport 2",
   "description": "New version of mod that allows you to build maparts automatically",
@@ -30,9 +30,7 @@
     "fabric-api": "*",
     "minecraft": ">=1.19",
     "owo": "*",
-    "java": ">=17",
-    "malilib": "*",
-    "litematica": "*"
+    "java": ">=17"
   },
   "suggests": {
     "modmenu": "*"
