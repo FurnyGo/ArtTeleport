@@ -9,7 +9,10 @@
   "text.config.arttp-config.option.cYaw": "Horizontal angle of rotation of the camera during teleportation",
   "text.config.arttp-config.option.cPitch": "Vertical angle of rotation of the camera during teleportation",
   "text.config.arttp-config.option.cStep": "Number of lines to which you will be teleported next",
+  "text.config.arttp-config.option.cStepSpeed": "Teleportation speed to the desired line (only with tp on the client side)",
   "text.config.arttp-config.option.checkTimer": "Speed of coordinate checker (ms)",
+  "text.config.arttp-config.option.pitchAnim": "Enable smooth camera tilt after teleportation",
+  "text.config.arttp-config.option.pitchSpeed": "The speed of the camera tilt, if the anti-cheat does not allow instant (ms)",
   "text.config.arttp-config.option.inaccuracy": "Additional coord range for teleports (during lags)",
 
   "modmenu.summaryTranslation.arttp": "Teleportation by mapart line by line",

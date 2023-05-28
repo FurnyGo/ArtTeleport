@@ -32,11 +32,31 @@ public class CheckerStartMixin {
                     else {
                         if (crdX >= CONFIG.cLimX() && crdX <= CONFIG.cLimX() + CONFIG.inaccuracy()) {
                             // End of line
-                            MinecraftClient.getInstance().player.updatePositionAndAngles(CONFIG.cLimX()-1, MinecraftClient.getInstance().player.getY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep(), CONFIG.cYaw(), CONFIG.cPitch());
+                            for (int i = 0; i < CONFIG.cStep(); i++) {
+                                MinecraftClient.getInstance().player.updatePosition(CONFIG.cLimX()-1, CONFIG.cCrdY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep());
+                                Thread.sleep(CONFIG.cStepSpeed());
+                            }
+                            MinecraftClient.getInstance().player.setYaw((float) CONFIG.cYaw());
+                            if (CONFIG.pitchAnim()){
+                                for (float i = 0; i <= CONFIG.cPitch(); i+=0.1){
+                                    MinecraftClient.getInstance().player.setPitch(i);
+                                    Thread.sleep(CONFIG.pitchSpeed());
+                                }
+                            } else MinecraftClient.getInstance().player.setPitch((float) CONFIG.cPitch());
                         }
                         else if (crdX <= CONFIG.cCrdX() && crdX >= CONFIG.cCrdX() - CONFIG.inaccuracy()) {
                             // Start of line
-                            MinecraftClient.getInstance().player.updatePositionAndAngles(CONFIG.cCrdX()+1, MinecraftClient.getInstance().player.getY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep(), CONFIG.cYaw()+180, CONFIG.cPitch());
+                            for (int i = 0; i < CONFIG.cStep(); i++) {
+                                MinecraftClient.getInstance().player.updatePosition(CONFIG.cCrdX()+1, CONFIG.cCrdY(), MinecraftClient.getInstance().player.getZ()+CONFIG.cStep());
+                                Thread.sleep(CONFIG.cStepSpeed());
+                            }
+                            MinecraftClient.getInstance().player.setYaw((float) CONFIG.cYaw()+180);
+                            if (CONFIG.pitchAnim()) {
+                                for (float i = 0; i <= CONFIG.cPitch(); i += 0.1) {
+                                    MinecraftClient.getInstance().player.setPitch(i);
+                                    Thread.sleep(CONFIG.pitchSpeed());
+                                }
+                            } else MinecraftClient.getInstance().player.setPitch((float) CONFIG.cPitch());
                         }
                         Thread.sleep(CONFIG.checkTimer());
                     }
